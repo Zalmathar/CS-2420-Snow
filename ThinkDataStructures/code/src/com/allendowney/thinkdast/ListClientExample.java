@@ -18,6 +18,8 @@ public class ListClientExample {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("Go Badgers!");
+		System.out.println("Go Badgers!");
 		ListClientExample lce = new ListClientExample();
 		@SuppressWarnings("rawtypes")
 		List list = lce.getList();

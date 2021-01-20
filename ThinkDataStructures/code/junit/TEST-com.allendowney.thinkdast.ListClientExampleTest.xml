@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="Aetherus" name="com.allendowney.thinkdast.ListClientExampleTest" skipped="0" tests="1" time="0.121" timestamp="2021-01-20T17:13:50">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="env.COLORFGBG" value="15;0" />
+    <property name="env.PWD" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code" />
+    <property name="env.NO_AT_BRIDGE" value="1" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="15.0.1+9-18" />
+    <property name="env.XDG_SESSION_CLASS" value="user" />
+    <property name="env.XDG_VTNR" value="1" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="user.name" value="aetherus" />
+    <property name="env.KDED_STARTED_BY_KDEINIT" value="1" />
+    <property name="env.USER" value="aetherus" />
+    <property name="env.KONSOLE_DBUS_WINDOW" value="/Windows/1" />
+    <property name="env.SHELL" value="/usr/bin/fish" />
+    <property name="env.DESKTOP_SESSION" value="/usr/share/xsessions/plasma" />
+    <property name="env.LC_ADDRESS" value="en_US.UTF-8" />
+    <property name="env.ORIGINAL_XDG_CURRENT_DESKTOP" value="KDE" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="KDE" />
+    <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl" />
+    <property name="user.language" value="en" />
+    <property name="env.LC_MONETARY" value="en_US.UTF-8" />
+    <property name="env.XDG_SESSION_DESKTOP" value="KDE" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-15.0.1/lib" />
+    <property name="env.VSCODE_GIT_ASKPASS_MAIN" value="/opt/visual-studio-code/resources/app/extensions/git/dist/askpass-main.js" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="JavaCS" />
+    <property name="env.KDE_SESSION_UID" value="1000" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="java.version" value="15.0.1" />
+    <property name="env.KDE_FULL_SESSION" value="true" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:path=/run/user/1000/bus" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env.LC_PAPER" value="en_US.UTF-8" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.SHLVL" value="5" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.XCURSOR_THEME" value="Sweet-cursors" />
+    <property name="java.class.version" value="59.0" />
+    <property name="env.CHROME_DESKTOP" value="code-url-handler.desktop" />
+    <property name="user.country" value="US" />
+    <property name="env.KDE_SESSION_VERSION" value="5" />
+    <property name="ant.file.JavaCS" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/build.xml" />
+    <property name="java.home" value="/usr/lib/jvm/jdk-15.0.1" />
+    <property name="env.PAM_KWALLET5_LOGIN" value="/run/user/1000/kwallet5.socket" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="os.version" value="5.9.1-1-rt19-MANJARO" />
+    <property name="ant.file" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/build.xml" />
+    <property name="env.LOGNAME" value="aetherus" />
+    <property name="env.TERM_PROGRAM_VERSION" value="1.52.1" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="15.0.1+9-18" />
+    <property name="env.VSCODE_GIT_IPC_HANDLE" value="/run/user/1000/vscode-git-31bb5d3987.sock" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session1" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.XDG_SESSION_TYPE" value="x11" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="env.APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL" value="true" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.KDE_APPLICATIONS_AS_SCOPE" value="1" />
+    <property name="env.LC_MEASUREMENT" value="en_US.UTF-8" />
+    <property name="target" value="1.7" />
+    <property name="user.home" value="/home/aetherus" />
+    <property name="java.version.date" value="2020-10-20" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="vscode" />
+    <property name="env.WINDOWID" value="67108871" />
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="env.LC_MESSAGES" value="en_US.UTF-8" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="env.XDG_SEAT" value="seat0" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.ListClientExampleTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.ListClientExampleTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher12983189800644572234.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit49377209198969145.properties" />
+    <property name="java.class.path" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/bin:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jedis-2.8.0.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jsoup-1.8.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/junit-4.12.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-core-1.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jcommon-1.0.23.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jfreechart-1.0.19.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/servlet.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/ant-junit.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/commons-math3-3.6.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-library-1.3.jar:/usr/share/java/junit-4.12.jar:/usr/share/java/ant/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.9 compiled on December 22 1969" />
+    <property name="env.XDG_SESSION_ID" value="2" />
+    <property name="env.KONSOLE_DBUS_SESSION" value="/Sessions/1" />
+    <property name="jdk.debug" value="release" />
+    <property name="env.GIT_ASKPASS" value="/opt/visual-studio-code/resources/app/extensions/git/dist/askpass.sh" />
+    <property name="ant.file.type.JavaCS" value="file" />
+    <property name="env.VSCODE_GIT_ASKPASS_NODE" value="/opt/visual-studio-code/code" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="15" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.GTK_RC_FILES" value="/etc/gtk/gtkrc:/home/aetherus/.gtkrc:/home/aetherus/.config/gtkrc" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.HOME" value="/home/aetherus" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="env.KONSOLE_VERSION" value="201200" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
+    <property name="user.dir" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code" />
+    <property name="env.XAUTHORITY" value="/home/aetherus/.Xauthority" />
+    <property name="env.GTK_MODULES" value="canberra-gtk-module" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.GTK2_RC_FILES" value="/etc/gtk-2.0/gtkrc:/home/aetherus/.gtkrc-2.0:/home/aetherus/.config/gtkrc-2.0" />
+    <property name="env.COLORTERM" value="truecolor" />
+    <property name="env.XCURSOR_SIZE" value="24" />
+    <property name="basedir" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code" />
+    <property name="ant.java.version" value="15" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="env.QT_AUTO_SCREEN_SCALE_FACTOR" value="0" />
+    <property name="env.LC_TIME" value="en_US.UTF-8" />
+    <property name="source" value="1.7" />
+    <property name="env.MOTD_SHOWN" value="pam" />
+    <property name="env.MAIL" value="/var/spool/mail/aetherus" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.SHELL_SESSION_ID" value="dcf03d02b6774ffb8fe09b3b07f7e143" />
+    <property name="env.KONSOLE_DBUS_SERVICE" value=":1.47" />
+    <property name="java.specification.version" value="15" />
+    <property name="ant.project.invoked-targets" value="ListClientExampleTest" />
+  </properties>
+  <testcase classname="com.allendowney.thinkdast.ListClientExampleTest" name="testListClientExample" time="0.013">
+    <failure message="&#xa;Expected: an instance of java.util.ArrayList&#xa;     but: &lt;[]&gt; is a java.util.LinkedList" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: an instance of java.util.ArrayList
+     but: &lt;[]&gt; is a java.util.LinkedList
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.allendowney.thinkdast.ListClientExampleTest.testListClientExample(ListClientExampleTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
