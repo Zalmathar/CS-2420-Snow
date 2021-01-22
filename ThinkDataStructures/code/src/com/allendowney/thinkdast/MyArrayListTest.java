@@ -32,7 +32,7 @@ public class MyArrayListTest {
 		list.add(2);
 		list.add(3);
 
-		mylist = new MyArrayList<Integer>();
+		mylist = new MyArrayList<Integer>(); // This is part of a custom list defined by the author
 		mylist.addAll(list);
 	}
 

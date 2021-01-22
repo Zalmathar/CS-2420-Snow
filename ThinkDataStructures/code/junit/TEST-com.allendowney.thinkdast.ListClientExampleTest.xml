@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="Aetherus" name="com.allendowney.thinkdast.ListClientExampleTest" skipped="0" tests="1" time="0.121" timestamp="2021-01-20T17:13:50">
+<testsuite errors="0" failures="0" hostname="Aetherus" name="com.allendowney.thinkdast.ListClientExampleTest" skipped="0" tests="1" time="0.123" timestamp="2021-01-22T16:46:08">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -73,14 +73,14 @@
     <property name="java.version.date" value="2020-10-20" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="env.TERM_PROGRAM" value="vscode" />
-    <property name="env.WINDOWID" value="67108871" />
+    <property name="env.WINDOWID" value="62914567" />
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
     <property name="java.vendor.url" value="https://java.oracle.com/" />
     <property name="env.LC_MESSAGES" value="en_US.UTF-8" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="env.XDG_SEAT" value="seat0" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.ListClientExampleTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.ListClientExampleTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher12983189800644572234.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit49377209198969145.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.ListClientExampleTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.ListClientExampleTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher2527028259995410506.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit6371993740480450516.properties" />
     <property name="java.class.path" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/bin:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jedis-2.8.0.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jsoup-1.8.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/junit-4.12.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-core-1.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jcommon-1.0.23.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jfreechart-1.0.19.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/servlet.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/ant-junit.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/commons-math3-3.6.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-library-1.3.jar:/usr/share/java/junit-4.12.jar:/usr/share/java/ant/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.9 compiled on December 22 1969" />
     <property name="env.XDG_SESSION_ID" value="2" />
@@ -120,22 +120,12 @@
     <property name="env.MOTD_SHOWN" value="pam" />
     <property name="env.MAIL" value="/var/spool/mail/aetherus" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="env.SHELL_SESSION_ID" value="dcf03d02b6774ffb8fe09b3b07f7e143" />
-    <property name="env.KONSOLE_DBUS_SERVICE" value=":1.47" />
+    <property name="env.SHELL_SESSION_ID" value="426b49d7abd24b489735ce1fb1ca6d61" />
+    <property name="env.KONSOLE_DBUS_SERVICE" value=":1.71" />
     <property name="java.specification.version" value="15" />
     <property name="ant.project.invoked-targets" value="ListClientExampleTest" />
   </properties>
-  <testcase classname="com.allendowney.thinkdast.ListClientExampleTest" name="testListClientExample" time="0.013">
-    <failure message="&#xa;Expected: an instance of java.util.ArrayList&#xa;     but: &lt;[]&gt; is a java.util.LinkedList" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-Expected: an instance of java.util.ArrayList
-     but: &lt;[]&gt; is a java.util.LinkedList
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.allendowney.thinkdast.ListClientExampleTest.testListClientExample(ListClientExampleTest.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
-  </testcase>
+  <testcase classname="com.allendowney.thinkdast.ListClientExampleTest" name="testListClientExample" time="0.004" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
