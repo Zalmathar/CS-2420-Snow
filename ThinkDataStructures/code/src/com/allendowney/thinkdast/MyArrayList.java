@@ -13,17 +13,19 @@ import java.util.ListIterator;
  */
 public class MyArrayList<T> implements List<T> {
 	int size;                    // keeps track of the number of elements
+	int maxSize;
 	private T[] array;           // stores the elements
 
 	/**
 	 *
 	 */
 	@SuppressWarnings("unchecked")
-	public MyArrayList() {
+	public MyArrayList() { // constructor
 		// You can't instantiate an array of T[], but you can instantiate an
 		// array of Object and then typecast it.  Details at
 		// http://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
-		array = (T[]) new Object[10];
+		maxSize = 10;
+		array = (T[]) new Object[maxSize]; // Creates an array of "null" pointers from the object type. can be assigned to any java type
 		size = 0;
 	}
 
@@ -36,8 +38,10 @@ public class MyArrayList<T> implements List<T> {
 		mal.add(1);
 		mal.add(2);
 		mal.add(3);
-		System.out.println(Arrays.toString(mal.toArray()) + " size = " + mal.size);
-
+		for (int i = 0; i < 10000; i++) {
+			mal.add(i);
+		}
+		System.out.println(Arra// TODO: FILL THIS IN!
 		mal.remove(new Integer(2));
 		System.out.println(Arrays.toString(mal.toArray()) + " size = " + mal.size);
 	}
@@ -45,6 +49,19 @@ public class MyArrayList<T> implements List<T> {
 	@Override
 	public boolean add(T element) {
 		// TODO: FILL THIS IN!
+		// TODO: Make the primitave array type like a vector.
+		if (size >= maxSize) {
+			T larger[];
+			larger = (T[]) new Object[maxSize * 2];
+			for (int i = 0; i < size; i++) {
+				larger[i] = array[i];
+			}
+			array = larger;
+			maxSize *= 2;
+		}
+
+		array[size] = element;
+		size++;
 		return false;
 	}
 
