@@ -1,5 +1,6 @@
 package com.allendowney.thinkdast;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
@@ -24,7 +25,7 @@ public class MyArrayList<T> implements List<T> {
 		// You can't instantiate an array of T[], but you can instantiate an
 		// array of Object and then typecast it.  Details at
 		// http://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
-		maxSize = 10;
+		maxSize = 104;
 		array = (T[]) new Object[maxSize]; // Creates an array of "null" pointers from the object type. can be assigned to any java type
 		size = 0;
 	}
@@ -38,10 +39,10 @@ public class MyArrayList<T> implements List<T> {
 		mal.add(1);
 		mal.add(2);
 		mal.add(3);
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 0; i < 100000; i++) {
 			mal.add(i);
 		}
-		System.out.println(Arra// TODO: FILL THIS IN!
+		System.out.println(Arrays.toString(mal.toArray()) + " size = " + mal.size);// TODO: FILL THIS IN!
 		mal.remove(new Integer(2));
 		System.out.println(Arrays.toString(mal.toArray()) + " size = " + mal.size);
 	}

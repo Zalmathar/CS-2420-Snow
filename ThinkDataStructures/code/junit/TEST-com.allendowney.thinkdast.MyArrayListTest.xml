@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="6" failures="12" hostname="Aetherus" name="com.allendowney.thinkdast.MyArrayListTest" skipped="0" tests="20" time="0.159" timestamp="2021-01-22T16:50:04">
+<testsuite errors="0" failures="9" hostname="Aetherus" name="com.allendowney.thinkdast.MyArrayListTest" skipped="0" tests="20" time="0.168" timestamp="2021-01-29T16:37:53">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.name" value="Linux" />
     <property name="env.COLORFGBG" value="15;0" />
-    <property name="env.PWD" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code" />
+    <property name="env.PWD" value="/home/aetherus/programing/algorithms/ThinkDataStructures/code" />
     <property name="env.NO_AT_BRIDGE" value="1" />
     <property name="env.LANG" value="en_US.UTF-8" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
@@ -58,7 +58,7 @@
     <property name="env.TERM_PROGRAM_VERSION" value="1.52.1" />
     <property name="path.separator" value=":" />
     <property name="java.vm.version" value="15.0.1+9-18" />
-    <property name="env.VSCODE_GIT_IPC_HANDLE" value="/run/user/1000/vscode-git-31bb5d3987.sock" />
+    <property name="env.VSCODE_GIT_IPC_HANDLE" value="/run/user/1000/vscode-git-47641a3d55.sock" />
     <property name="ant.library.dir" value="/usr/share/ant/lib" />
     <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session1" />
     <property name="junit.output.dir" value="junit" />
@@ -73,14 +73,14 @@
     <property name="java.version.date" value="2020-10-20" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="env.TERM_PROGRAM" value="vscode" />
-    <property name="env.WINDOWID" value="62914567" />
+    <property name="env.WINDOWID" value="73400327" />
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
     <property name="java.vendor.url" value="https://java.oracle.com/" />
     <property name="env.LC_MESSAGES" value="en_US.UTF-8" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="env.XDG_SEAT" value="seat0" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.MyArrayListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.MyArrayListTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher3349492969754573051.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit15240201637403031179.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.MyArrayListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.MyArrayListTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher13845471412092902624.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit3490007864692902898.properties" />
     <property name="java.class.path" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/bin:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jedis-2.8.0.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jsoup-1.8.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/junit-4.12.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-core-1.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jcommon-1.0.23.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jfreechart-1.0.19.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/servlet.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/ant-junit.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/commons-math3-3.6.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-library-1.3.jar:/usr/share/java/junit-4.12.jar:/usr/share/java/ant/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.9 compiled on December 22 1969" />
     <property name="env.XDG_SESSION_ID" value="2" />
@@ -97,9 +97,8 @@
     <property name="debuglevel" value="source,lines,vars" />
     <property name="env.HOME" value="/home/aetherus" />
     <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
-    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
     <property name="java.io.tmpdir" value="/tmp" />
-    <property name="env.KONSOLE_VERSION" value="201200" />
+    <property name="env.KONSOLE_VERSION" value="201201" />
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
     <property name="os.arch" value="amd64" />
     <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
@@ -120,38 +119,22 @@
     <property name="env.MOTD_SHOWN" value="pam" />
     <property name="env.MAIL" value="/var/spool/mail/aetherus" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="env.SHELL_SESSION_ID" value="426b49d7abd24b489735ce1fb1ca6d61" />
-    <property name="env.KONSOLE_DBUS_SERVICE" value=":1.71" />
+    <property name="env.SHELL_SESSION_ID" value="0a39c73b292b4697ba387c94c6c6a1af" />
+    <property name="env.KONSOLE_DBUS_SERVICE" value=":1.112" />
     <property name="java.specification.version" value="15" />
     <property name="ant.project.invoked-targets" value="MyArrayListTest" />
   </properties>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testToArray" time="0.006">
-    <error message="Index 0 out of bounds for length 0" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at com.allendowney.thinkdast.MyArrayListTest.testToArray(MyArrayListTest.java:294)
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testToArray" time="0.004" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddIntT" time="0.006">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at com.allendowney.thinkdast.MyArrayListTest.testAddIntT(MyArrayListTest.java:71)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
+</failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddIntT" time="0.001">
-    <error type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException
-	at com.allendowney.thinkdast.MyArrayList.add(MyArrayList.java:54)
-	at com.allendowney.thinkdast.MyArrayListTest.testAddIntT(MyArrayListTest.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testGet" time="0.0">
-    <error type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException
-	at com.allendowney.thinkdast.MyArrayList.get(MyArrayList.java:106)
-	at com.allendowney.thinkdast.MyArrayListTest.testGet(MyArrayListTest.java:134)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSet" time="0.004">
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testGet" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSet" time="0.002">
     <failure message="&#xa;Expected: is &lt;2&gt;&#xa;     but: was null" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 Expected: is &lt;2&gt;
      but: was null
@@ -162,49 +145,11 @@ Expected: is &lt;2&gt;
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddAllCollectionOfQextendsT" time="0.002">
-    <failure message="&#xa;Expected: is &lt;12&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-Expected: is &lt;12&gt;
-     but: was &lt;0&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.allendowney.thinkdast.MyArrayListTest.testAddAllCollectionOfQextendsT(MyArrayListTest.java:96)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testClear" time="0.001" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddT" time="0.001">
-    <error type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException
-	at com.allendowney.thinkdast.MyArrayList.get(MyArrayList.java:106)
-	at com.allendowney.thinkdast.MyArrayListTest.testAddT(MyArrayListTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSize" time="0.002">
-    <failure message="&#xa;Expected: is &lt;3&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-Expected: is &lt;3&gt;
-     but: was &lt;0&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.allendowney.thinkdast.MyArrayListTest.testSize(MyArrayListTest.java:275)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testLastIndexOf" time="0.001">
-    <failure message="&#xa;Expected: is &lt;3&gt;&#xa;     but: was &lt;-1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-Expected: is &lt;3&gt;
-     but: was &lt;-1&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.allendowney.thinkdast.MyArrayListTest.testLastIndexOf(MyArrayListTest.java:186)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
-  </testcase>
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddAllCollectionOfQextendsT" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testClear" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddT" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSize" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testLastIndexOf" time="0.0" />
   <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testContainsAll" time="0.001">
     <failure message="&#xa;Expected: &lt;true&gt;&#xa;     but: was &lt;false&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 Expected: &lt;true&gt;
@@ -216,7 +161,7 @@ Expected: &lt;true&gt;
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveObject" time="0.002">
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveObject" time="0.001">
     <failure message="&#xa;Expected: &lt;true&gt;&#xa;     but: was &lt;false&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 Expected: &lt;true&gt;
      but: was &lt;false&gt;
@@ -249,7 +194,7 @@ Expected: is &lt;3&gt;
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIndexOf" time="0.001">
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIndexOf" time="0.002">
     <failure message="&#xa;Expected: is &lt;0&gt;&#xa;     but: was &lt;-1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 Expected: is &lt;0&gt;
      but: was &lt;-1&gt;
@@ -260,38 +205,20 @@ Expected: is &lt;0&gt;
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testMyList" time="0.001">
-    <failure message="&#xa;Expected: is &lt;3&gt;&#xa;     but: was &lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-Expected: is &lt;3&gt;
-     but: was &lt;0&gt;
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testMyList" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIsEmpty" time="0.002" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIterator" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveAll" time="0.001">
+    <failure message="&#xa;Expected: is &lt;0&gt;&#xa;     but: was &lt;3&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
+Expected: is &lt;0&gt;
+     but: was &lt;3&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.allendowney.thinkdast.MyArrayListTest.testMyList(MyArrayListTest.java:44)
+	at com.allendowney.thinkdast.MyArrayListTest.testRemoveAll(MyArrayListTest.java:235)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIsEmpty" time="0.002">
-    <failure message="&#xa;Expected: &lt;false&gt;&#xa;     but: was &lt;true&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-Expected: &lt;false&gt;
-     but: was &lt;true&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.allendowney.thinkdast.MyArrayListTest.testIsEmpty(MyArrayListTest.java:163)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIterator" time="0.001">
-    <error type="java.util.NoSuchElementException">java.util.NoSuchElementException
-	at java.base/java.util.Arrays$ArrayItr.next(Arrays.java:4244)
-	at com.allendowney.thinkdast.MyArrayListTest.testIterator(MyArrayListTest.java:174)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
-  </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveAll" time="0.0" />
   <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveInt" time="0.001">
     <failure message="&#xa;Expected: is &lt;2&gt;&#xa;     but: was null" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 Expected: is &lt;2&gt;
@@ -303,15 +230,7 @@ Expected: is &lt;2&gt;
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </failure>
   </testcase>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSubList" time="0.001">
-    <error type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException
-	at com.allendowney.thinkdast.MyArrayList.subList(MyArrayList.java:216)
-	at com.allendowney.thinkdast.MyArrayListTest.testSubList(MyArrayListTest.java:284)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</error>
-  </testcase>
+  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSubList" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
