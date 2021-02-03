@@ -4,6 +4,7 @@
 
 // Used this fourm to understand generic Types in java https://www.quora.com/What-does-T-means-in-java?share=1
 public class CircularLinkedList<T> {
+    // Represents a Node in a linked list
     private class Node {
         T data;  // Holds the data
         Node next; // represents the next Node in the circular linked list
