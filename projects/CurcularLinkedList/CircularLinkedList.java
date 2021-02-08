@@ -6,7 +6,7 @@
 public class CircularLinkedList<T> {
     // Represents a Node in a linked list
     private class Node {
-        T data;  // Holds the data
+        T data;  // Holds the data inside the node.
         Node next; // represents the next Node in the circular linked list
     }
     // Represents a pointer to the last node in the list
