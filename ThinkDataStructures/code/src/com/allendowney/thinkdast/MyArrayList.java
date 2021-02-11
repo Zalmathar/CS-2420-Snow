@@ -129,6 +129,12 @@ public class MyArrayList<T> implements List<T> {
 	@Override
 	public int indexOf(Object target) {
 		// TODO: FILL THIS IN!
+		// Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+		for(int i = 0; i < size; i++) {
+			if(array[i] == target) {
+				return i;
+			}
+		}
 		return -1;
 	}
 
@@ -200,6 +206,18 @@ public class MyArrayList<T> implements List<T> {
 	@Override
 	public T remove(int index) {
 		// TODO: FILL THIS IN!
+		// Removes the element at the specified position in this list (optional operation). Shifts any subsequent elements to the left (subtracts one from their indices). Returns the element that was removed from the list.
+		Object[] newArray = new Object[maxSize];	
+		for(int i = 0; i < size; i++) {
+			if(i < index) {
+				newArray[i] = array[i];
+			} else if (i > index) {
+				newArray[i - 1] = array[i];
+			} else {
+				// do nothing
+			}
+		}
+		array = newArray;
 		return null;
 	}
 
@@ -220,6 +238,8 @@ public class MyArrayList<T> implements List<T> {
 	@Override
 	public T set(int index, T element) {
 		// TODO: FILL THIS IN!
+		// Replaces the element at the specified position in this list with the specified element (optional operation).
+		array[index] = element;
 		return null;
 	}
 
