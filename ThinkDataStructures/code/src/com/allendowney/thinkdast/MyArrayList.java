@@ -207,7 +207,7 @@ public class MyArrayList<T> implements List<T> {
 	public T remove(int index) {
 		// TODO: FILL THIS IN!
 		// Removes the element at the specified position in this list (optional operation). Shifts any subsequent elements to the left (subtracts one from their indices). Returns the element that was removed from the list.
-		Object[] newArray = new Object[maxSize];	
+		T[] newArray = new T[maxSize];	
 		for(int i = 0; i < size; i++) {
 			if(i < index) {
 				newArray[i] = array[i];
