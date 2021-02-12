@@ -195,7 +195,7 @@ public class MyArrayListTest {
 		assertThat(flag, equalTo(true));
 		assertThat(mylist.size(), is(2));
 		assertThat(mylist.get(1), is(new Integer(3)));
-		//System.out.println(Arrays.toString(mal.toArray()));
+		// System.out.println(Arrays.toString(mal.toArray()));
 
 		flag = mylist.remove(new Integer(1));
 		assertThat(flag, equalTo(true));

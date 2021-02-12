@@ -25,7 +25,7 @@ public class MyArrayList<T> implements List<T> {
 		// You can't instantiate an array of T[], but you can instantiate an
 		// array of Object and then typecast it.  Details at
 		// http://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
-		maxSize = 104;
+		maxSize = 1;
 		array = (T[]) new Object[maxSize]; // Creates an array of "null" pointers from the object type. can be assigned to any java type
 		size = 0;
 	}
@@ -131,7 +131,7 @@ public class MyArrayList<T> implements List<T> {
 		// TODO: FILL THIS IN!
 		// Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
 		for(int i = 0; i < size; i++) {
-			if(array[i] == target) {
+			if (equals(target, array[i])) {
 				return i;
 			}
 		}
@@ -207,7 +207,8 @@ public class MyArrayList<T> implements List<T> {
 	public T remove(int index) {
 		// TODO: FILL THIS IN!
 		// Removes the element at the specified position in this list (optional operation). Shifts any subsequent elements to the left (subtracts one from their indices). Returns the element that was removed from the list.
-		T[maxSize] newArray;	
+		T oldElement = array[index];
+		T[] newArray = (T[]) new Object[maxSize];	
 		for(int i = 0; i < size; i++) {
 			if(i < index) {
 				newArray[i] = array[i];
@@ -217,8 +218,9 @@ public class MyArrayList<T> implements List<T> {
 				// do nothing
 			}
 		}
+		size--;
 		array = newArray;
-		return null;
+		return oldElement;
 	}
 
 	@Override
@@ -239,8 +241,9 @@ public class MyArrayList<T> implements List<T> {
 	public T set(int index, T element) {
 		// TODO: FILL THIS IN!
 		// Replaces the element at the specified position in this list with the specified element (optional operation).
+		T oldElement = array[index];
 		array[index] = element;
-		return null;
+		return oldElement;
 	}
 
 	@Override
