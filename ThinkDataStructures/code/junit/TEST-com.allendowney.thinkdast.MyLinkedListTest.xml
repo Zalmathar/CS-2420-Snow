@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Aetherus" name="com.allendowney.thinkdast.MyArrayListTest" skipped="0" tests="20" time="0.131" timestamp="2021-02-12T16:54:52">
+<testsuite errors="0" failures="0" hostname="Aetherus" name="com.allendowney.thinkdast.MyLinkedListTest" skipped="0" tests="20" time="0.148" timestamp="2021-02-18T00:05:39">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
-    <property name="env.SESSION_MANAGER" value="local/Aetherus:@/tmp/.ICE-unix/3562,unix/Aetherus:/tmp/.ICE-unix/3562" />
+    <property name="env.SESSION_MANAGER" value="local/Aetherus:@/tmp/.ICE-unix/5920,unix/Aetherus:/tmp/.ICE-unix/5920" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.name" value="Linux" />
+    <property name="env.COLORFGBG" value="15;0" />
     <property name="env.PWD" value="/home/aetherus/programing/algorithms/ThinkDataStructures/code" />
     <property name="env.NO_AT_BRIDGE" value="1" />
     <property name="env.LANG" value="en_US.UTF-8" />
@@ -17,6 +18,7 @@
     <property name="env.DISPLAY" value=":0" />
     <property name="user.name" value="aetherus" />
     <property name="env.USER" value="aetherus" />
+    <property name="env.KONSOLE_DBUS_WINDOW" value="/Windows/1" />
     <property name="env.SHELL" value="/usr/bin/fish" />
     <property name="env.DESKTOP_SESSION" value="/usr/share/xsessions/plasma" />
     <property name="env.LC_ADDRESS" value="en_US.UTF-8" />
@@ -24,8 +26,8 @@
     <property name="env.XDG_CURRENT_DESKTOP" value="KDE" />
     <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl" />
     <property name="user.language" value="en" />
-    <property name="env.XDG_SESSION_DESKTOP" value="KDE" />
     <property name="env.LC_MONETARY" value="en_US.UTF-8" />
+    <property name="env.XDG_SESSION_DESKTOP" value="KDE" />
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-15.0.1/lib" />
     <property name="env.VSCODE_GIT_ASKPASS_MAIN" value="/opt/visual-studio-code/resources/app/extensions/git/dist/askpass-main.js" />
     <property name="ant.project.default-target" value="build" />
@@ -38,7 +40,7 @@
     <property name="sun.arch.data.model" value="64" />
     <property name="env.LC_PAPER" value="en_US.UTF-8" />
     <property name="sun.jnu.encoding" value="UTF-8" />
-    <property name="env.SHLVL" value="4" />
+    <property name="env.SHLVL" value="5" />
     <property name="file.separator" value="/" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="env.XCURSOR_THEME" value="Sweet-cursors" />
@@ -62,6 +64,7 @@
     <property name="junit.output.dir" value="junit" />
     <property name="env.XDG_SESSION_TYPE" value="x11" />
     <property name="env.TERM" value="xterm-256color" />
+    <property name="env.APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL" value="true" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="env.KDE_APPLICATIONS_AS_SCOPE" value="1" />
     <property name="env.LC_MEASUREMENT" value="en_US.UTF-8" />
@@ -70,16 +73,18 @@
     <property name="java.version.date" value="2020-10-20" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="env.TERM_PROGRAM" value="vscode" />
+    <property name="env.WINDOWID" value="71303175" />
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
     <property name="java.vendor.url" value="https://java.oracle.com/" />
     <property name="env.LC_MESSAGES" value="en_US.UTF-8" />
-    <property name="env.XDG_SEAT" value="seat0" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="env.XDG_SEAT" value="seat0" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.MyArrayListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.MyArrayListTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher13823659125125085978.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit13725244872959207995.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.allendowney.thinkdast.MyLinkedListTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit/TEST-com.allendowney.thinkdast.MyLinkedListTest.xml crashfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junitvmwatcher11144415683955030144.properties propsfile=/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/junit17235782357250964026.properties" />
     <property name="java.class.path" value="/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/bin:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jedis-2.8.0.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jsoup-1.8.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/junit-4.12.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-core-1.3.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jcommon-1.0.23.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/jfreechart-1.0.19.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/servlet.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/ant-junit.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/commons-math3-3.6.jar:/home/aetherus/programing/CS-2420-Snow/ThinkDataStructures/code/lib/hamcrest-library-1.3.jar:/usr/share/java/junit-4.13.1.jar:/usr/share/java/ant/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.9 compiled on December 22 1969" />
     <property name="env.XDG_SESSION_ID" value="2" />
+    <property name="env.KONSOLE_DBUS_SESSION" value="/Sessions/1" />
     <property name="jdk.debug" value="release" />
     <property name="env.GIT_ASKPASS" value="/opt/visual-studio-code/resources/app/extensions/git/dist/askpass.sh" />
     <property name="ant.file.type.JavaCS" value="file" />
@@ -92,7 +97,9 @@
     <property name="debuglevel" value="source,lines,vars" />
     <property name="env.HOME" value="/home/aetherus" />
     <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
     <property name="java.io.tmpdir" value="/tmp" />
+    <property name="env.KONSOLE_VERSION" value="201202" />
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
     <property name="os.arch" value="amd64" />
     <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
@@ -113,29 +120,31 @@
     <property name="env.MOTD_SHOWN" value="pam" />
     <property name="env.MAIL" value="/var/spool/mail/aetherus" />
     <property name="file.encoding" value="UTF-8" />
+    <property name="env.SHELL_SESSION_ID" value="47834ab8d42a4391b661266188925f88" />
+    <property name="env.KONSOLE_DBUS_SERVICE" value=":1.92" />
     <property name="java.specification.version" value="15" />
-    <property name="ant.project.invoked-targets" value="MyArrayListTest" />
+    <property name="ant.project.invoked-targets" value="MyLinkedListTest" />
   </properties>
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testToArray" time="0.004" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddIntT" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testGet" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSet" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddAllCollectionOfQextendsT" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testClear" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testAddT" time="0.001" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSize" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testLastIndexOf" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testContainsAll" time="0.001" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveObject" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testContains" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIndexOfNull" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIndexOf" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testMyList" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIsEmpty" time="0.001" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testIterator" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveAll" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testRemoveInt" time="0.0" />
-  <testcase classname="com.allendowney.thinkdast.MyArrayListTest" name="testSubList" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testToArray" time="0.005" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testAddIntT" time="0.001" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testGet" time="0.001" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testSet" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testAddAllCollectionOfQextendsT" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testClear" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testAddT" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testSize" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testLastIndexOf" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testContainsAll" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testRemoveObject" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testContains" time="0.001" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testIndexOfNull" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testIndexOf" time="0.001" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testMyList" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testIsEmpty" time="0.001" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testIterator" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testRemoveAll" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testRemoveInt" time="0.0" />
+  <testcase classname="com.allendowney.thinkdast.MyLinkedListTest" name="testSubList" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

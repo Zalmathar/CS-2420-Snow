@@ -85,17 +85,20 @@ public class MyLinkedList<E> implements List<E> {
 		//TODO: add!Finsished FILL THIS IN!
 		if (head == null) {
 			head = new Node(element);
+		} else if (index == 0) {
+			Node newNode = new Node(element, head);
+			head = newNode;
 		} else {
-			Node prevNode = head;
-			// Iterate prevNode to the node before the indicated index. Inserting the newNode infront of this one. 
-			for (int i = 0; i > index - 1; i++) {
-				prevNode = prevNode.next;
+			Node iter = head;
+			// Iterate iter to the node before the indicated index. Inserting the newNode infront of this one. 
+			for (int i = 0; i < index - 1; i++) {
+				iter = iter.next;
 			}
-			// create a new node, store the data and set the next node to prevNode's next node, Inserting this newNode;
-			Node newNode = new Node(element, prevNode.next);
-			prevNode.next = newNode;
-			size++;
+			// create a new node, store the data and set the next node to iter's next node, Inserting this newNode;
+			Node newNode = new Node(element, iter.next);
+			iter.next = newNode;
 		}
+		size++;
 	}
 
 	@Override
@@ -159,7 +162,7 @@ public class MyLinkedList<E> implements List<E> {
 		//TODO: FILL THIS IN!
 		Node iter = head;
 		for (int i = 0; iter != null; i++) {
-			if(iter.data.equals(target)) {
+			if(equals(target, iter.data)) {
 				return i;
 			}
 			iter = iter.next;
@@ -229,13 +232,20 @@ public class MyLinkedList<E> implements List<E> {
 	@Override
 	public E remove(int index) {
 		//TODO: FILL THIS IN!
-		Node iter = head; 
-			for (int i = 0; i > index - 1; i++) {
+		Node delNode = null;
+		if (index == 0) {
+			delNode = head;
+			head = head.next;
+		} else {
+			Node iter = head;
+			for (int i = 0; i < index - 1; i++) {
 				iter = iter.next;
 			}
-			iter.next = iter.next.next;
-			size--;
-		return null;
+			delNode = iter.next;
+			iter.next = delNode.next;
+		}
+		size--;
+		return delNode.data;
 	}
 
 	@Override
