@@ -39,7 +39,7 @@ public class MyArrayList<T> implements List<T> {
 		mal.add(1);
 		mal.add(2);
 		mal.add(3);
-		for (int i = 0; i < 100000; i++) {
+		for (int i = 0; i < 100; i++) {
 			mal.add(i);
 		}
 		System.out.println(Arrays.toString(mal.toArray()) + " size = " + mal.size);// TODO: FILL THIS IN!
