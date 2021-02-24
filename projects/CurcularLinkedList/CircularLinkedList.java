@@ -6,15 +6,16 @@
 public class CircularLinkedList<T> {
     // Represents a Node in a linked list
     private class Node {
-        T data;  // Holds the data inside the node.
+        T data; // Holds the data inside the node.
         Node next; // represents the next Node in the circular linked list
     }
+
     // Represents a pointer to the last node in the list
     Node back;
 
     // Constructor
     public CircularLinkedList() {
-        
+
     }
 
     // empty(), returns true if the list is empty
@@ -25,7 +26,8 @@ public class CircularLinkedList<T> {
     // Last pointer in the list points to the front of the list
     // pop_back(), removes the last node in the list
     public void pop_back() {
-        // find the item before the back, requires you to iterate through the entire list to find.
+        // find the item before the back, requires you to iterate through the entire
+        // list to find.
         Node iterator = back.next;
         while (iterator.next != back) {
             iterator = iterator.next;
@@ -43,7 +45,7 @@ public class CircularLinkedList<T> {
         oldFront.next = null;
     }
 
-    //  push_front, adds a node to the front of the list
+    // push_front, adds a node to the front of the list
     public void push_front(T value) {
         if (!empty()) {
             Node newNode = new Node();
@@ -75,12 +77,12 @@ public class CircularLinkedList<T> {
         }
     }
 
-    //  front() returns a reference to the front of the list
+    // front() returns a reference to the front of the list
     public T front() {
         return back.next.data;
     }
-    
-    //  back() returns a reference to the back of the list
+
+    // back() returns a reference to the back of the list
     public T back() {
         return back.data;
     }
