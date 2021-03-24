@@ -12,8 +12,8 @@ namespace MyBinaryTree
             MyBinaryTreeTest.runTests();
 
             MyBinaryTree tree = new MyBinaryTree();
-            tree.addNode(1);
             tree.addNode(2);
+            tree.addNode(1);
             tree.addNode(3);
             tree.printTree();
         }
