@@ -22,6 +22,8 @@ namespace MyBinaryTree
                 testToArray();
                 testAddNodePreSorted();
                 testAddNodeReverse();
+                testAddNodeUnSorted();
+                testAddNodeDuplicates();
             }
             catch (FailedTestException e)
             {
@@ -138,6 +140,58 @@ namespace MyBinaryTree
             }
 
             Console.WriteLine("testAddNodeReverse() Passes all tests");
+        }
+
+        private static void testAddNodeUnSorted() {
+            MyBinaryTree tree = new MyBinaryTree();
+            tree.addNode(5);
+            tree.addNode(2);
+            tree.addNode(4);
+            tree.addNode(10);
+            tree.addNode(6);
+            tree.addNode(3);
+            tree.addNode(7);
+            tree.addNode(8);
+            tree.addNode(1);
+            tree.addNode(9);
+
+            int?[] check = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int?[] test = tree.toArray();
+
+            for (int i = 0; i < test.Length; i++)
+            {
+                if (check[i] != test[i] || check.Length != test.Length)
+                {
+                    throw new FailedTestException("testAddNodeUnSorted() failed " + check + " Does not equal " + tree.toArray());
+                }
+            }
+
+            Console.WriteLine("testAddNodeUnSorted() Passes all tests");
+        }
+
+        private static void testAddNodeDuplicates() {
+            MyBinaryTree tree = new MyBinaryTree();
+
+            tree.addNode(5);
+            tree.addNode(5);
+            tree.addNode(6);
+            tree.addNode(2);
+            tree.addNode(5);
+            tree.addNode(2);
+            tree.addNode(6);
+
+            int?[] check = { 2, 2, 5, 5, 5, 6, 6};
+            int?[] test = tree.toArray();
+
+            for (int i = 0; i < test.Length; i++)
+            {
+                if (check[i] != test[i] || check.Length != test.Length)
+                {
+                    throw new FailedTestException("testAddNodeDuplicates() failed " + check + " Does not equal " + tree.toArray());
+                }
+            }
+
+            Console.WriteLine("testAddNodeDuplicates() Passes all tests");
         }
     }
 }
