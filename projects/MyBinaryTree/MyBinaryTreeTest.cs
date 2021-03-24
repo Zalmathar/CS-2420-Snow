@@ -6,6 +6,7 @@ using System;
 
 namespace MyBinaryTree
 {
+    // Represents a failed test
     [System.Serializable]
     public class FailedTestException : System.Exception
     {
@@ -19,7 +20,7 @@ namespace MyBinaryTree
             {
                 testEmpty();
                 testToArray();
-                testAddNodeSorted();
+                testAddNodePreSorted();
                 testAddNodeReverse();
             }
             catch (FailedTestException e)
@@ -75,7 +76,7 @@ namespace MyBinaryTree
 
         // Adds all of the nodes in the tree in reverse order compaired to the check array. 
         // Also tests to see if tree will automatically sort the input
-        private static void testAddNodeSorted()
+        private static void testAddNodePreSorted()
         {
             // First Part of Test
             MyBinaryTree tree = new MyBinaryTree();
@@ -98,11 +99,11 @@ namespace MyBinaryTree
             {
                 if (check[i] != test[i] || check.Length != test.Length)
                 {
-                    throw new FailedTestException("testAddNodeSorted() failed " + check + " Does not equal " + tree.toArray());
+                    throw new FailedTestException("testAddNodePreSorted() failed " + check + " Does not equal " + tree.toArray());
                 }
             }
 
-            Console.WriteLine("testAddNodeSorted() Passes all tests");
+            Console.WriteLine("testAddNodePreSorted() Passes all tests");
         }
 
         private static void testAddNodeReverse()
