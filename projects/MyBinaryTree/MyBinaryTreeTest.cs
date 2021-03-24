@@ -142,7 +142,8 @@ namespace MyBinaryTree
             Console.WriteLine("testAddNodeReverse() Passes all tests");
         }
 
-        private static void testAddNodeUnSorted() {
+        private static void testAddNodeUnSorted()
+        {
             MyBinaryTree tree = new MyBinaryTree();
             tree.addNode(5);
             tree.addNode(2);
@@ -155,7 +156,7 @@ namespace MyBinaryTree
             tree.addNode(1);
             tree.addNode(9);
 
-            int?[] check = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int?[] check = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int?[] test = tree.toArray();
 
             for (int i = 0; i < test.Length; i++)
@@ -169,7 +170,8 @@ namespace MyBinaryTree
             Console.WriteLine("testAddNodeUnSorted() Passes all tests");
         }
 
-        private static void testAddNodeDuplicates() {
+        private static void testAddNodeDuplicates()
+        {
             MyBinaryTree tree = new MyBinaryTree();
 
             tree.addNode(5);
@@ -180,7 +182,7 @@ namespace MyBinaryTree
             tree.addNode(2);
             tree.addNode(6);
 
-            int?[] check = { 2, 2, 5, 5, 5, 6, 6};
+            int?[] check = { 2, 2, 5, 5, 5, 6, 6 };
             int?[] test = tree.toArray();
 
             for (int i = 0; i < test.Length; i++)

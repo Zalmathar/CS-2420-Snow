@@ -135,7 +135,8 @@ namespace MyBinaryTree
 
         private void printTree(ref Node node)
         {
-            if (!this.empty()) {
+            if (!this.empty())
+            {
                 if (node.left != null)
                 {
                     printTree(ref node.left);
