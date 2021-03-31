@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace treeIterativeDFS
 {
-    class tree
+    class Tree
     {
         // Represents a Node inside of a tree structure
         private class Node
@@ -28,35 +28,64 @@ namespace treeIterativeDFS
             }
         }
         // Represents the root Node in the tree
-        private Node root;
+        private Node root = null;
 
         // Tree Class constructor
-        public void Tree()
-        {
-            root = null;
-        }
+        // public void Tree()
+        // {
+        //     root = null;
+        // }
 
         public void TraverseIter()
         {
-            Stack<Node> stack = new Stack<Node>();
-            stack.Push(root);
-            // Console.WriteLine(stack.Peek().value);
-
-            while (stack.Count > 0)
+            if (root != null)
             {
-                // Console.WriteLine(stack.Pop().value);
-                // // stack.Pop();
-                Node node = stack.Pop();
-                Console.WriteLine(node.value);
-                if (node.left != null)
+                Stack<Node> stack = new Stack<Node>();
+                stack.Push(root);
+                // Console.WriteLine(stack.Peek().value);
+                while (stack.Count > 0)
                 {
-                    stack.Push(node.left);
-                }
-                if (node.right != null)
-                {
-                    stack.Push(node.right);
+                    // Console.WriteLine(stack.Pop().value);
+                    // // stack.Pop();
+                    Node node = stack.Pop();
+                    Console.WriteLine(node.value);
+                    // Check right
+                    if (node.right != null)
+                    {
+                        stack.Push(node.right);
+                    }
+                    // Check left
+                    if (node.left != null)
+                    {
+                        stack.Push(node.left);
+                    }
                 }
             }
+        }
+
+        public void Test()
+        {
+            // How we would want to use an iterator
+            // The variable tree must provide the iterator we want to use
+            foreach (Node item in tree) // Range based for loop
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public System.Collections.Generic.IEnumerator<Node> GetEnumerator()
+        {
+            throw new System.NotImplementedException();
+            yield return default(Node);
+        }
+    }
+
+    class Program
+    {
+        public static void Main(String[] args)
+        {
+            Tree tree = new Tree();
+            tree.TraverseIter();
         }
     }
 }
