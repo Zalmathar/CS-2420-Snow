@@ -99,6 +99,11 @@ public class MyLinearMap<K, V> implements Map<K, V> {
 	@Override
 	public V get(Object key) {
 		// TODO: FILL THIS IN!
+		for (Map.Entry<K, V> entry : entries) {
+			if ( entry.getKey().equals(key)) {
+				return entry.getValue();
+			}
+		}
 		return null;
 	}
 
@@ -119,6 +124,8 @@ public class MyLinearMap<K, V> implements Map<K, V> {
 	@Override
 	public V put(K key, V value) {
 		// TODO: FILL THIS IN!
+		Entry<K, V>; entry(key, value);
+
 		return null;
 	}
 
