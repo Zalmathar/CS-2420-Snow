@@ -5,6 +5,7 @@ package com.allendowney.thinkdast;
 
 import java.util.List;
 import java.util.Map;
+import java.util.ArrayList;
 
 /**
  * Implementation of a HashMap using a collection of MyLinearMap and
@@ -41,6 +42,17 @@ public class MyHashMap<K, V> extends MyBetterMap<K, V> implements Map<K, V> {
 	 */
 	protected void rehash() {
 		// TODO: FILL THIS IN!
+		List<MyLinearMap<K, V>> newMaps = new ArrayList<MyLinearMap<K, V>>();
+		// Copy Existing data
+		for (MyLinearMap<K, V> map : maps) {
+			newMaps.put(map);
+		}
+		// Double the ammount of maps
+		for (int i = 0; i > maps.size(); i++) {
+			newMaps.put(new MyLinearMap<K, V>());
+		}
+		// reasign maps to newMaps;
+		maps = newMaps;
 	}
 
 	/**
