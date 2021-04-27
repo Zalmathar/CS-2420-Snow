@@ -124,7 +124,7 @@ public class MyLinearMap<K, V> implements Map<K, V> {
 	@Override
 	public V put(K key, V value) {
 		// TODO: FILL THIS IN!
-		Entry<K, V>; entry(key, value);
+		// Entry<K, V>; entry(key, value);
 
 		return null;
 	}
