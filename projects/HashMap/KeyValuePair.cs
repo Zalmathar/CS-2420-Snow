@@ -3,11 +3,11 @@
 // Represts a KeyValuePair
 
 namespace KeyValuePair {
-    public class KeyValuePair<K, V> {
+    public class MyKeyValuePair<K, V> {
         public K key;
         public V value;
 
-        public KeyValuePair(K key, V value) {
+        public MyKeyValuePair(K key, V value) {
             this.key = key;
             this.value = value;
         }

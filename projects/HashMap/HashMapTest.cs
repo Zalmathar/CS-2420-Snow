@@ -11,6 +11,7 @@ namespace HashMap
             testPut(ref numbers);
             testContainsKey(numbers);
             testContainsValue(numbers);
+            testGet(numbers);
         }
 
         private static void testPut(ref HashMap<string, int> numbers) { // using ref because we are changing values,
@@ -44,6 +45,16 @@ namespace HashMap
                 Debug.Assert(numbers.containsValue(4) == false);
             } catch(Exception e) {
                 Console.WriteLine($"testContainsvalue Failed. {e.Message}");
+            }
+        }
+
+        private static void testGet(HashMap<string, int> numbers) {
+            try {
+                Debug.Assert(numbers.get("one").Equals(1));
+                Debug.Assert(numbers.get("two").Equals(2));
+                Debug.Assert(numbers.get("three").Equals(3));
+            } catch(Exception e) {
+                Console.WriteLine($"testGet failed. {e.Message}");
             }
         }
     }
