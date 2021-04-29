@@ -5,9 +5,7 @@
 
 using System;
 using KeyValuePair;
-using System.Security.Cryptography;
-using System.Text;
-using System.Collections.Generic;
+using LinkedList;
 
 namespace HashMap
 {
@@ -18,19 +16,19 @@ namespace HashMap
         private int size; // Represents the number of key-value mappins in this map.
         private int maxSize; // Represents the maximum number of key-value mappins this map can hold.
 
-        private LinkedList<MyKeyValuePair<K, V>>[] map; // Represents an array of KeyValuePairs
+        private MyLinkedList<MyKeyValuePair<K, V>>[] map; // Represents an array of KeyValuePairs
 
         private void init(int size)
         {
             this.size = 0;
             maxSize = size;
-            map = new LinkedList<MyKeyValuePair<K, V>>[size]; // Store both the key in a byte array to store the HashValue of the key. Value is left alone.
+            map = new MyLinkedList<MyKeyValuePair<K, V>>[size];
         }
 
         // Consructor's
         public HashMap()
         {
-            init(3); // default size of 10
+            init(10); // default size of 10
         }
 
         public HashMap(int size)
@@ -41,11 +39,16 @@ namespace HashMap
         // Returns true if this map contains a mapping for the specified key.
         public bool containsKey(K key)
         {
-            foreach (MyKeyValuePair<K, V> pair in map[Math.Abs(key.GetHashCode() % (maxSize))])
-            {
-                if (pair.key.Equals(key))
+            var location = Math.Abs(key.GetHashCode() % (maxSize));
+            if (map[location] != null) {
+                foreach (MyKeyValuePair<K, V> pair in map[location])
                 {
-                    return true;
+                    if (pair != null) {
+                        if (pair.key.Equals(key))
+                        {
+                            return true;
+                        }
+                    }
                 }
             }
             return false;
@@ -54,13 +57,15 @@ namespace HashMap
         // Returns true if this map maps one or more keys to the specified value.
         public bool containsValue(V value)
         {
-            foreach (LinkedList<MyKeyValuePair<K, V>> list in map)
+            foreach (MyLinkedList<MyKeyValuePair<K, V>> list in map)
             {
-                foreach (MyKeyValuePair<K, V> pair in list)
-                {
-                    if (pair.value.Equals(value))
+                if (list != null) {
+                    foreach (MyKeyValuePair<K, V> pair in list)
                     {
-                        return true;
+                        if (pair.value.Equals(value))
+                        {
+                            return true;
+                        }
                     }
                 }
             }
@@ -70,11 +75,16 @@ namespace HashMap
         public V get(K key)
         {
             // return map[Math.Abs(key.GetHashCode() % maxSize)].value;
-            foreach (MyKeyValuePair<K, V> pair in map[Math.Abs(key.GetHashCode() % (maxSize))])
-            {
-                if (pair.key.Equals(key))
+            var location = Math.Abs(key.GetHashCode() % (maxSize));
+            if (map[location] != null) {
+                foreach (MyKeyValuePair<K, V> pair in map[location])
                 {
-                    return pair.value;
+                    if (pair != null) {
+                        if (pair.key.Equals(key))
+                        {
+                            return pair.value;
+                        }
+                    }
                 }
             }
             return default(V);
@@ -99,12 +109,16 @@ namespace HashMap
             // TODO:
             V[] values = new V[size];
             int i = 0;
-            foreach (LinkedList<MyKeyValuePair<K, V>> list in map)
+            foreach (MyLinkedList<MyKeyValuePair<K, V>> list in map)
             {
-                foreach (MyKeyValuePair<K, V> pair in list)
-                {
-                    values[i] = pair.value;
-                    i++;
+                if (list != null) {
+                    foreach (MyKeyValuePair<K, V> pair in list)
+                    {
+                        if (pair != null) {
+                            values[i] = pair.value;
+                            i++;
+                        }
+                    }
                 }
             }
             return values;
@@ -116,18 +130,29 @@ namespace HashMap
             if (size + 1 > maxSize)
             {
                 // Copy and create a new array.
-                LinkedList<MyKeyValuePair<K, V>>[] oldMap = map;
+                MyLinkedList<MyKeyValuePair<K, V>>[] oldMap = map;
                 init(maxSize * 2);
-                foreach (LinkedList<MyKeyValuePair<K, V>> list in map)
+                foreach (MyLinkedList<MyKeyValuePair<K, V>> list in map)
                 {
-                    foreach (MyKeyValuePair<K, V> pair in list)
-                    {
-                        put(pair.key, pair.value);
+                    if (list != null) {
+                        foreach (MyKeyValuePair<K, V> pair in list)
+                        {
+                            if (pair != null) {
+                                put(pair.key, pair.value);
+                            }
+                        }
                     }
                 }
             }
 
-            map[Math.Abs(key.GetHashCode() % (maxSize))].AddLast(new MyKeyValuePair<K, V>(key, value));
+            var location = Math.Abs(key.GetHashCode() % (maxSize));
+            var node = new MyKeyValuePair<K, V>(key, value);
+            if (this.map[location] == null) {
+                map[location] = new MyLinkedList<MyKeyValuePair<K, V>>();
+                this.map[location].AddLast(node);
+            } else {
+                this.map[location].AddLast(node);
+            }
             size++;
         }
     }

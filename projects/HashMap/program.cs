@@ -1,6 +1,7 @@
 using System;
 using KeyValuePair;
 using HashMap;
+using DataU;
 
 namespace program
 {
@@ -8,6 +9,13 @@ namespace program
         public static void Main() {
             KeyValuePairTest.runTests();
             HashMapTest.runTests();
+            StudentDBTest.RunTests();
+            
+            
+
+            
+        
+
         }
     }
 }
