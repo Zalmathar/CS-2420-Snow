@@ -132,7 +132,7 @@ namespace HashMap
                 // Copy and create a new array.
                 MyLinkedList<MyKeyValuePair<K, V>>[] oldMap = map;
                 init(maxSize * 2);
-                foreach (MyLinkedList<MyKeyValuePair<K, V>> list in map)
+                foreach (MyLinkedList<MyKeyValuePair<K, V>> list in oldMap)
                 {
                     if (list != null) {
                         foreach (MyKeyValuePair<K, V> pair in list)

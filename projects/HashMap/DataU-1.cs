@@ -33,7 +33,7 @@ namespace DataU
 
         public StudentDB()
         {
-            dataB = new HashMap<int, Student>(20);
+            dataB = new HashMap<int, Student>(10);
         }
         public Student Get(int id)
         {
